@@ -1,20 +1,19 @@
-import { createStore } from 'redux'
-import Server from './server.js'
+import { createStore } from 'redux';
+import Server from './server.js';
+import views from './views.js';
 
 export default function app() {
-  const initialState = {
-    items: []
-  }
+  const initialState = { items: [], }
   const appReducer = function(state,action) {
+
     if (state === undefined) {
       state = initialState;
     }
     switch (action.type) {
-      case "TESTING":
-        console.log("It works!");
-        console.log(state);
+      case "VISITOR_ARRIVES":
+        views.welcomeVisitor();
         return state
-
+      case
 
 
       default:
