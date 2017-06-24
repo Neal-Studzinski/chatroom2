@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import Server from './server.js';
-import views from './views.js';
+import Views from './views.js';
 
 export default function app() {
   const initialState = { items: [], }

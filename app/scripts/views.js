@@ -2,7 +2,7 @@ import moment from 'moment';
 
 export default function Views(store) {
 
-  funciton deleteButtonHandler(e) {
+  function deleteButtonHandler(e) {
     let i = e.currentTarget.id;
     store.dispatch({type:"DELETE_CHAT_BY_ID",idToDelete:i})
   }
@@ -17,7 +17,7 @@ export default function Views(store) {
     store.dispatch({type: "SUBMIT_NEW_CHAT", username:name})
   }
 
-
+  
 
 
 }
